@@ -1,0 +1,18 @@
+services:
+  myapp:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - mongodb=mongodb://mongo:27017/userdb
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:

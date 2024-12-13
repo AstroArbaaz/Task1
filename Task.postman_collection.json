@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "aef3ba41-745d-468e-b2dd-b87f6f394add",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9847518",
+		"_collection_link": "https://cloudy-rocket-742854.postman.co/workspace/CRM-%26-PM~27e20064-6589-4bdb-a92d-a961cbb44349/collection/9847518-aef3ba41-745d-468e-b2dd-b87f6f394add?action=share&source=collection_link&creator=9847518"
+	},
+	"item": [
+		{
+			"name": "Get_User_Request_with_Pagination_Sort_and_Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users?page=1&limit=20&sort=-name&search={\"gender\":\"male\",\"address.country\":\"India\"}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "sort",
+							"value": "-name"
+						},
+						{
+							"key": "search",
+							"value": "{\"gender\":\"male\",\"address.country\":\"India\"}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/users?page=1&limit=20&sort=-name&search={\"gender\":\"male\",\"address.country\":\"India\"}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "sort",
+									"value": "-name"
+								},
+								{
+									"key": "search",
+									"value": "{\"gender\":\"male\",\"address.country\":\"India\"}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8188"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ffc-FIe/FqReVg/h2Ap4zpF+Zlws5x8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Dec 2024 16:51:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 258,\n    \"limit\": 20,\n    \"page\": 1,\n    \"sortBy\": \"-name\",\n    \"items\": [\n        {\n            \"_id\": \"675c6622dd0545e83b417b6e\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Zayan Pai\",\n            \"address\": {\n                \"city\": \"Ranchi\",\n                \"state\": \"Chhattisgarh\",\n                \"country\": \"India\",\n                \"street\": \"8595 Mint St\",\n                \"_id\": \"675c6622dd0545e83b417b6f\"\n            },\n            \"email\": \"zayan.pai@example.com\",\n            \"age\": \"75\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/11.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.098Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b417458\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Yatin Nayak\",\n            \"address\": {\n                \"city\": \"Ulhasnagar\",\n                \"state\": \"Daman and Diu\",\n                \"country\": \"India\",\n                \"street\": \"4224 Sao Tome Old Quarter\",\n                \"_id\": \"675c6622dd0545e83b417459\"\n            },\n            \"email\": \"yatin.nayak@example.com\",\n            \"age\": \"65\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/76.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.891Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.095Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b415b28\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Yashodha Shroff\",\n            \"address\": {\n                \"city\": \"Ozhukarai\",\n                \"state\": \"Nagaland\",\n                \"country\": \"India\",\n                \"street\": \"9743 Altamount Rd\",\n                \"_id\": \"675c6621dd0545e83b415b29\"\n            },\n            \"email\": \"yashodha.shroff@example.com\",\n            \"age\": \"46\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/14.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.888Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.067Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b417c04\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Yashodha Kavser\",\n            \"address\": {\n                \"city\": \"Purnia\",\n                \"state\": \"Chhattisgarh\",\n                \"country\": \"India\",\n                \"street\": \"6276 Bandstand Promenade\",\n                \"_id\": \"675c6622dd0545e83b417c05\"\n            },\n            \"email\": \"yashodha.kavser@example.com\",\n            \"age\": \"45\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/42.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.099Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b417d4e\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Yash Shetty\",\n            \"address\": {\n                \"city\": \"Katni\",\n                \"state\": \"Uttarakhand\",\n                \"country\": \"India\",\n                \"street\": \"4434 Janpath\",\n                \"_id\": \"675c6622dd0545e83b417d4f\"\n            },\n            \"email\": \"yash.shetty@example.com\",\n            \"age\": \"78\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/43.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.099Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b41675c\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Viti Taj\",\n            \"address\": {\n                \"city\": \"Hospet\",\n                \"state\": \"Lakshadweep\",\n                \"country\": \"India\",\n                \"street\": \"1330 Gali Paranthe Wali\",\n                \"_id\": \"675c6621dd0545e83b41675d\"\n            },\n            \"email\": \"viti.taj@example.com\",\n            \"age\": \"50\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/10.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.890Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.083Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b415d72\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Veena Rao\",\n            \"address\": {\n                \"city\": \"Cuttack\",\n                \"state\": \"Haryana\",\n                \"country\": \"India\",\n                \"street\": \"4243 Maharanipeta\",\n                \"_id\": \"675c6621dd0545e83b415d73\"\n            },\n            \"email\": \"veena.rao@example.com\",\n            \"age\": \"50\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/48.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.889Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.071Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b416292\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Veena Bangera\",\n            \"address\": {\n                \"city\": \"Navi Mumbai\",\n                \"state\": \"Chhattisgarh\",\n                \"country\": \"India\",\n                \"street\": \"115 Coaker's Walk\",\n                \"_id\": \"675c6621dd0545e83b416293\"\n            },\n            \"email\": \"veena.bangera@example.com\",\n            \"age\": \"32\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/95.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.889Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.078Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b415e0e\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Vedant Moolya\",\n            \"address\": {\n                \"city\": \"Latur\",\n                \"state\": \"Manipur\",\n                \"country\": \"India\",\n                \"street\": \"7829 Gali Paranthe Wali\",\n                \"_id\": \"675c6621dd0545e83b415e0f\"\n            },\n            \"email\": \"vedant.moolya@example.com\",\n            \"age\": \"34\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/97.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.889Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.072Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b417954\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Vedant Anand\",\n            \"address\": {\n                \"city\": \"Mira-Bhayandar\",\n                \"state\": \"Mizoram\",\n                \"country\": \"India\",\n                \"street\": \"3094 Shakespeare Sarani\",\n                \"_id\": \"675c6622dd0545e83b417955\"\n            },\n            \"email\": \"vedant.anand@example.com\",\n            \"age\": \"59\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/15.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.097Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b416a5a\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Ved Tipparti\",\n            \"address\": {\n                \"city\": \"Vasai-Virar\",\n                \"state\": \"Tamil Nadu\",\n                \"country\": \"India\",\n                \"street\": \"5594 Mirza Ismail Rd\",\n                \"_id\": \"675c6622dd0545e83b416a5b\"\n            },\n            \"email\": \"ved.tipparti@example.com\",\n            \"age\": \"54\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/2.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.890Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.086Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b4158c0\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Varsha Holla\",\n            \"address\": {\n                \"city\": \"Madhyamgram\",\n                \"state\": \"Jammu and Kashmir\",\n                \"country\": \"India\",\n                \"street\": \"868 Santhekatte\",\n                \"_id\": \"675c6621dd0545e83b4158c1\"\n            },\n            \"email\": \"varsha.holla@example.com\",\n            \"age\": \"55\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/91.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.888Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.062Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b4171b4\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Vandana Gugale\",\n            \"address\": {\n                \"city\": \"Danapur\",\n                \"state\": \"Bihar\",\n                \"country\": \"India\",\n                \"street\": \"8526 Kazimar St\",\n                \"_id\": \"675c6622dd0545e83b4171b5\"\n            },\n            \"email\": \"vandana.gugale@example.com\",\n            \"age\": \"39\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/24.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.891Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.093Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b4159f4\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Vaani Tipparti\",\n            \"address\": {\n                \"city\": \"Chandigarh\",\n                \"state\": \"Rajasthan\",\n                \"country\": \"India\",\n                \"street\": \"9964 Old Jail Rd\",\n                \"_id\": \"675c6621dd0545e83b4159f5\"\n            },\n            \"email\": \"vaani.tipparti@example.com\",\n            \"age\": \"48\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/90.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.888Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.065Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b4177a6\",\n            \"id\": \"\",\n            \"gender\": \"female\",\n            \"name\": \"Vaani Prabhu\",\n            \"address\": {\n                \"city\": \"Orai\",\n                \"state\": \"Chandigarh\",\n                \"country\": \"India\",\n                \"street\": \"3996 Rajpur Rd\",\n                \"_id\": \"675c6622dd0545e83b4177a7\"\n            },\n            \"email\": \"vaani.prabhu@example.com\",\n            \"age\": \"63\",\n            \"picture\": \"https://randomuser.me/api/portraits/women/95.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.097Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b416580\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Utkarsh Kumari\",\n            \"address\": {\n                \"city\": \"Nashik\",\n                \"state\": \"Puducherry\",\n                \"country\": \"India\",\n                \"street\": \"2796 Rajaji Salai\",\n                \"_id\": \"675c6621dd0545e83b416581\"\n            },\n            \"email\": \"utkarsh.kumari@example.com\",\n            \"age\": \"39\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/61.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.890Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.082Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b4170ae\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Upkaar Gupta\",\n            \"address\": {\n                \"city\": \"Hospet\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"street\": \"5247 Shakespeare Sarani\",\n                \"_id\": \"675c6622dd0545e83b4170af\"\n            },\n            \"email\": \"upkaar.gupta@example.com\",\n            \"age\": \"23\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/22.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.891Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.090Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b417b20\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Umang Salian\",\n            \"address\": {\n                \"city\": \"Belgaum\",\n                \"state\": \"Uttar Pradesh\",\n                \"country\": \"India\",\n                \"street\": \"5838 Bandstand Promenade\",\n                \"_id\": \"675c6622dd0545e83b417b21\"\n            },\n            \"email\": \"umang.salian@example.com\",\n            \"age\": \"32\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/69.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.892Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.098Z\"\n        },\n        {\n            \"_id\": \"675c6622dd0545e83b4169f6\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Teerth Kumar\",\n            \"address\": {\n                \"city\": \"Tumkur\",\n                \"state\": \"Daman and Diu\",\n                \"country\": \"India\",\n                \"street\": \"6760 College St\",\n                \"_id\": \"675c6622dd0545e83b4169f7\"\n            },\n            \"email\": \"teerth.kumar@example.com\",\n            \"age\": \"60\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/73.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.890Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.085Z\"\n        },\n        {\n            \"_id\": \"675c6621dd0545e83b416206\",\n            \"id\": \"\",\n            \"gender\": \"male\",\n            \"name\": \"Tarak Bharanya\",\n            \"address\": {\n                \"city\": \"Khandwa\",\n                \"state\": \"Tamil Nadu\",\n                \"country\": \"India\",\n                \"street\": \"42 Bhootnath Rd\",\n                \"_id\": \"675c6621dd0545e83b416207\"\n            },\n            \"email\": \"tarak.bharanya@example.com\",\n            \"age\": \"64\",\n            \"picture\": \"https://randomuser.me/api/portraits/men/15.jpg\",\n            \"createdAt\": \"2024-12-13T16:51:45.889Z\",\n            \"__v\": 0,\n            \"updatedAt\": \"2024-12-13T16:51:46.078Z\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
